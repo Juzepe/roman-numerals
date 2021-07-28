@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('converted-integer-into-roman-numerals', 'RomanNumeralsController@convertInteger');
+Route::get('latest-converted-integers', 'RomanNumeralsController@latestConvertedIntegers');
+Route::get('frequently-converted-integers', 'RomanNumeralsController@frequentlyConvertedIntegers');
